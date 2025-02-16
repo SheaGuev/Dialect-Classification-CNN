@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="269pt" height="1196pt" viewBox="0.00 0.00 268.76 1196.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1192)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-1192 264.76,-1192 264.76,4 -4,4"/>
+<!-- Input -->
+<g id="node1" class="node">
+<title>Input</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-1170" rx="56.35" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-1165.8" font-family="Times,serif" font-size="14.00">Input Layer</text>
+</g>
+<!-- Conv1 -->
+<g id="node2" class="node">
+<title>Conv1</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-1098" rx="87.21" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-1093.8" font-family="Times,serif" font-size="14.00">Conv2D (32 filters)</text>
+</g>
+<!-- Input&#45;&gt;Conv1 -->
+<g id="edge1" class="edge">
+<title>Input-&gt;Conv1</title>
+<path fill="none" stroke="black" d="M130.38,-1151.7C130.38,-1144.41 130.38,-1135.73 130.38,-1127.54"/>
+<polygon fill="black" stroke="black" points="133.88,-1127.62 130.38,-1117.62 126.88,-1127.62 133.88,-1127.62"/>
+</g>
+<!-- BN1 -->
+<g id="node3" class="node">
+<title>BN1</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-1026" rx="56.09" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-1021.8" font-family="Times,serif" font-size="14.00">BatchNorm</text>
+</g>
+<!-- Conv1&#45;&gt;BN1 -->
+<g id="edge2" class="edge">
+<title>Conv1-&gt;BN1</title>
+<path fill="none" stroke="black" d="M130.38,-1079.7C130.38,-1072.41 130.38,-1063.73 130.38,-1055.54"/>
+<polygon fill="black" stroke="black" points="133.88,-1055.62 130.38,-1045.62 126.88,-1055.62 133.88,-1055.62"/>
+</g>
+<!-- Pool1 -->
+<g id="node4" class="node">
+<title>Pool1</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-954" rx="58.79" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-949.8" font-family="Times,serif" font-size="14.00">MaxPooling</text>
+</g>
+<!-- BN1&#45;&gt;Pool1 -->
+<g id="edge3" class="edge">
+<title>BN1-&gt;Pool1</title>
+<path fill="none" stroke="black" d="M130.38,-1007.7C130.38,-1000.41 130.38,-991.73 130.38,-983.54"/>
+<polygon fill="black" stroke="black" points="133.88,-983.62 130.38,-973.62 126.88,-983.62 133.88,-983.62"/>
+</g>
+<!-- Dropout1 -->
+<g id="node5" class="node">
+<title>Dropout1</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-882" rx="68.97" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-877.8" font-family="Times,serif" font-size="14.00">Dropout (0.16)</text>
+</g>
+<!-- Pool1&#45;&gt;Dropout1 -->
+<g id="edge4" class="edge">
+<title>Pool1-&gt;Dropout1</title>
+<path fill="none" stroke="black" d="M130.38,-935.7C130.38,-928.41 130.38,-919.73 130.38,-911.54"/>
+<polygon fill="black" stroke="black" points="133.88,-911.62 130.38,-901.62 126.88,-911.62 133.88,-911.62"/>
+</g>
+<!-- Conv2 -->
+<g id="node6" class="node">
+<title>Conv2</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-810" rx="87.21" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-805.8" font-family="Times,serif" font-size="14.00">Conv2D (64 filters)</text>
+</g>
+<!-- Dropout1&#45;&gt;Conv2 -->
+<g id="edge5" class="edge">
+<title>Dropout1-&gt;Conv2</title>
+<path fill="none" stroke="black" d="M130.38,-863.7C130.38,-856.41 130.38,-847.73 130.38,-839.54"/>
+<polygon fill="black" stroke="black" points="133.88,-839.62 130.38,-829.62 126.88,-839.62 133.88,-839.62"/>
+</g>
+<!-- BN2 -->
+<g id="node7" class="node">
+<title>BN2</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-738" rx="56.09" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-733.8" font-family="Times,serif" font-size="14.00">BatchNorm</text>
+</g>
+<!-- Conv2&#45;&gt;BN2 -->
+<g id="edge6" class="edge">
+<title>Conv2-&gt;BN2</title>
+<path fill="none" stroke="black" d="M130.38,-791.7C130.38,-784.41 130.38,-775.73 130.38,-767.54"/>
+<polygon fill="black" stroke="black" points="133.88,-767.62 130.38,-757.62 126.88,-767.62 133.88,-767.62"/>
+</g>
+<!-- Pool2 -->
+<g id="node8" class="node">
+<title>Pool2</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-666" rx="58.79" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-661.8" font-family="Times,serif" font-size="14.00">MaxPooling</text>
+</g>
+<!-- BN2&#45;&gt;Pool2 -->
+<g id="edge7" class="edge">
+<title>BN2-&gt;Pool2</title>
+<path fill="none" stroke="black" d="M130.38,-719.7C130.38,-712.41 130.38,-703.73 130.38,-695.54"/>
+<polygon fill="black" stroke="black" points="133.88,-695.62 130.38,-685.62 126.88,-695.62 133.88,-695.62"/>
+</g>
+<!-- Dropout2 -->
+<g id="node9" class="node">
+<title>Dropout2</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-594" rx="68.97" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-589.8" font-family="Times,serif" font-size="14.00">Dropout (0.24)</text>
+</g>
+<!-- Pool2&#45;&gt;Dropout2 -->
+<g id="edge8" class="edge">
+<title>Pool2-&gt;Dropout2</title>
+<path fill="none" stroke="black" d="M130.38,-647.7C130.38,-640.41 130.38,-631.73 130.38,-623.54"/>
+<polygon fill="black" stroke="black" points="133.88,-623.62 130.38,-613.62 126.88,-623.62 133.88,-623.62"/>
+</g>
+<!-- Conv3 -->
+<g id="node10" class="node">
+<title>Conv3</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-522" rx="92.04" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-517.8" font-family="Times,serif" font-size="14.00">Conv2D (128 filters)</text>
+</g>
+<!-- Dropout2&#45;&gt;Conv3 -->
+<g id="edge9" class="edge">
+<title>Dropout2-&gt;Conv3</title>
+<path fill="none" stroke="black" d="M130.38,-575.7C130.38,-568.41 130.38,-559.73 130.38,-551.54"/>
+<polygon fill="black" stroke="black" points="133.88,-551.62 130.38,-541.62 126.88,-551.62 133.88,-551.62"/>
+</g>
+<!-- BN3 -->
+<g id="node11" class="node">
+<title>BN3</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-450" rx="56.09" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-445.8" font-family="Times,serif" font-size="14.00">BatchNorm</text>
+</g>
+<!-- Conv3&#45;&gt;BN3 -->
+<g id="edge10" class="edge">
+<title>Conv3-&gt;BN3</title>
+<path fill="none" stroke="black" d="M130.38,-503.7C130.38,-496.41 130.38,-487.73 130.38,-479.54"/>
+<polygon fill="black" stroke="black" points="133.88,-479.62 130.38,-469.62 126.88,-479.62 133.88,-479.62"/>
+</g>
+<!-- Pool3 -->
+<g id="node12" class="node">
+<title>Pool3</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-378" rx="58.79" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-373.8" font-family="Times,serif" font-size="14.00">MaxPooling</text>
+</g>
+<!-- BN3&#45;&gt;Pool3 -->
+<g id="edge11" class="edge">
+<title>BN3-&gt;Pool3</title>
+<path fill="none" stroke="black" d="M130.38,-431.7C130.38,-424.41 130.38,-415.73 130.38,-407.54"/>
+<polygon fill="black" stroke="black" points="133.88,-407.62 130.38,-397.62 126.88,-407.62 133.88,-407.62"/>
+</g>
+<!-- Dropout3 -->
+<g id="node13" class="node">
+<title>Dropout3</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-306" rx="68.97" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-301.8" font-family="Times,serif" font-size="14.00">Dropout (0.16)</text>
+</g>
+<!-- Pool3&#45;&gt;Dropout3 -->
+<g id="edge12" class="edge">
+<title>Pool3-&gt;Dropout3</title>
+<path fill="none" stroke="black" d="M130.38,-359.7C130.38,-352.41 130.38,-343.73 130.38,-335.54"/>
+<polygon fill="black" stroke="black" points="133.88,-335.62 130.38,-325.62 126.88,-335.62 133.88,-335.62"/>
+</g>
+<!-- Flatten -->
+<g id="node14" class="node">
+<title>Flatten</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-234" rx="62.79" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-229.8" font-family="Times,serif" font-size="14.00">Flatten Layer</text>
+</g>
+<!-- Dropout3&#45;&gt;Flatten -->
+<g id="edge13" class="edge">
+<title>Dropout3-&gt;Flatten</title>
+<path fill="none" stroke="black" d="M130.38,-287.7C130.38,-280.41 130.38,-271.73 130.38,-263.54"/>
+<polygon fill="black" stroke="black" points="133.88,-263.62 130.38,-253.62 126.88,-263.62 133.88,-263.62"/>
+</g>
+<!-- Dense1 -->
+<g id="node15" class="node">
+<title>Dense1</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-162" rx="119.92" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-157.8" font-family="Times,serif" font-size="14.00">Dense (128 neurons, ReLU)</text>
+</g>
+<!-- Flatten&#45;&gt;Dense1 -->
+<g id="edge14" class="edge">
+<title>Flatten-&gt;Dense1</title>
+<path fill="none" stroke="black" d="M130.38,-215.7C130.38,-208.41 130.38,-199.73 130.38,-191.54"/>
+<polygon fill="black" stroke="black" points="133.88,-191.62 130.38,-181.62 126.88,-191.62 133.88,-191.62"/>
+</g>
+<!-- Dropout4 -->
+<g id="node16" class="node">
+<title>Dropout4</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-90" rx="68.97" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-85.8" font-family="Times,serif" font-size="14.00">Dropout (0.24)</text>
+</g>
+<!-- Dense1&#45;&gt;Dropout4 -->
+<g id="edge15" class="edge">
+<title>Dense1-&gt;Dropout4</title>
+<path fill="none" stroke="black" d="M130.38,-143.7C130.38,-136.41 130.38,-127.73 130.38,-119.54"/>
+<polygon fill="black" stroke="black" points="133.88,-119.62 130.38,-109.62 126.88,-119.62 133.88,-119.62"/>
+</g>
+<!-- Output -->
+<g id="node17" class="node">
+<title>Output</title>
+<ellipse fill="none" stroke="black" cx="130.38" cy="-18" rx="130.38" ry="18"/>
+<text text-anchor="middle" x="130.38" y="-13.8" font-family="Times,serif" font-size="14.00">Dense (num_classes, Softmax)</text>
+</g>
+<!-- Dropout4&#45;&gt;Output -->
+<g id="edge16" class="edge">
+<title>Dropout4-&gt;Output</title>
+<path fill="none" stroke="black" d="M130.38,-71.7C130.38,-64.41 130.38,-55.73 130.38,-47.54"/>
+<polygon fill="black" stroke="black" points="133.88,-47.62 130.38,-37.62 126.88,-47.62 133.88,-47.62"/>
+</g>
+</g>
+</svg>
